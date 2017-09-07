@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img[src="assets/images/envelope-w.png"] {
+	height: 30px;
+	padding-bottom: 5px;
+}
+
+body, html {
+	background-color: #F5FAFE !important;
+}
+
+#landing-page {
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+
+#wrapper {
+	margin-top: 70px;
+	margin-bottom: 50px;
+	min-height: 90vh !important;
+	font-size: 1.05em;
+}
+
+.navbar.navbar-default {
+	background-color: #062D84;
+	border-radius: 0 !important;
+	border: none;
+}
+.navbar.navbar-default .navbar-brand {
+	color: #fff;
+	font-weight: bolder;
+} 
+.navbar.navbar-default .nav.navbar-nav li > a {
+	color: #fff;
+}
+.navbar.navbar-default .nav.navbar-nav li > a:hover {
+	color: #fff !important;
+}
+.navbar-header > button {
+	background-color: transparent !important;
+}
+.navbar-right > .dropdown > a.dropdown-toggle {
+	background-color: transparent !important;
+}
+@media (min-width: 768px) {
+	ul.dropdown-menu li > a {
+		color: #000 !important;
+	}
+}
+ul.dropdown-menu li > a:hover {
+	background-color: #062D84;
+}
+ul.nav.navbar-nav > li.current > a {
+	background-color:  #100030 !important;
+	color: #fff !important;
+}
+ul.nav.navbar-nav > li.current > a:hover {
+	background-color: #100030 !important;
+}
+
+a[data-toggle="modal"], button[data-toggle="modal"] {
+	outline: none !important;
+}
+
+.login {
+	margin-top: 100px;
+}
+.login-body {
+	/* background-color: #062D84; */
+	background-color: #fff;
+	padding: 0 20px 10px;
+	box-shadow: 0 0 5px #000;
+}
+.login-body > h2 {
+	color: #062D84;
+	padding: 0 0 10px;
+}
+input[type="radio"] {
+	cursor: pointer;
+}
+input.radio-margin {
+	margin-left: 20px;
+}
+
+.btn, input, select {
+	border-radius: 0 !important;
+}
+
+footer {
+	bottom: 0;
+	padding: 10px;
+	font-size: 1em;
+	background-color: #000;
+	color: #ddd;
+	width: 100%;
+}
+footer nav {
+	display: inline;
+	float: right;
+	clear: right;
+}
+footer nav ul {
+	display: inline-block;
+	text-align: right;
+	position: relative;
+	right: 0;
+}
+footer nav ul > li {
+	display: inline-block;
+}
+footer nav ul > li > a {
+	padding: 0 10px;
+	display: block;
+}
+
+#homepage {
+	width: 100vw;
+	height: 100vh;
+	background: url("../images/bag.jpg") no-repeat center center;
+	background-size: cover;
+	box-sizing: border-box;
+	background-color: black;
+	position: relative;
+}
+#homepage > nav {
+	background-color: transparent !important;
+}
+#homepage > footer {
+	background-color: transparent !important;
+	color: #000;
+}
+#homepage > .container > .row {
+	background-color: #aaa;
+}
+.middle-color {
+	background-color: #ccc;
+	opacity: .9;
+	padding: 20px 0;
+	color: #000;
+}
+@media (min-width: 700px) {
+	.middle-color p {
+		font-size: 1.35em;
+	}
+	.middle-color h3 {
+		font-size: 36px;
+	}
+}
+.type-buttons {
+	margin: 20px 0;
+}
+.type-buttons .btn-success {
+	margin-right: 20px;
+}
+
+div.modal-content {
+	border-radius: 0 !important;
+}
+
+div.section {
+	background-color: #fff;
+	color: #000;
+	padding: 10px 20px;
+	box-shadow: 0 0 3px #000;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+div.section ul {
+	list-style-type: none;
+}
+div.section ul li.name-course {
+	margin-bottom: 10px;
+}
+div.indent {
+	text-indent: 30px !important;
+} 
+
+.dash {
+	font-size: 5em;
+}
+.bottom {
+	background-color: #F5FAFE;
+	padding: 5px;
+	margin: 0 !important;
+}
+div.stats.section {
+	padding: 0;
+}
+.head {
+	font-size: 20px;
+	padding-left: 20px;
+}
+.content {
+	padding: 20px;
+}
+.lecs {
+	padding: 5px 20px;
+}
+.studs {
+	padding: 2px 20px 1px;
+}
+
+div#success_message {
+	position: absolute;
+	right: 0;
+	top: 70px;
+	z-index: 99 !important;
+	max-width: 400px;
+}
+@media screen and (max-width: 450px) {
+	div#success_message {
+		width: 250px !important;
+	}
+}
+
