@@ -1,4 +1,11 @@
 <?php
+	session_start();
+	
+	if (!isset($_SESSION['username'])) {
+		header('Location: index.php');
+		exit();
+	}
+
 	@include 'includes/db_connect.php';
 
 	if (isset($_GET['assignment_id']) && !empty($_GET['assignment_id'])) {

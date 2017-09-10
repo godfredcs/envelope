@@ -1,6 +1,11 @@
 <?php 
 	session_start();
 
+	if (!isset($_SESSION['username'])) {
+		header('Location: index.php');
+		exit();
+	}
+
 	include 'includes/db_connect.php';
 
 	$index_number = $_SESSION['index_number'];

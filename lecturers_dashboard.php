@@ -1,6 +1,11 @@
 <?php  
 	session_start();
 
+	if (!isset($_SESSION['username'])) {
+		header('Location: index.php');
+		exit();
+	}
+
 	// We need the email in order to get the id
 	$email = $_SESSION['email'];
 

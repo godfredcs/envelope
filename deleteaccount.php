@@ -1,5 +1,10 @@
 <?php 
 	session_start();
+
+	if (!isset($_SESSION['username'])) {
+		header('Location: index.php');
+		exit();
+	}
 	
 	$index_number = $_SESSION['index_number'];
 

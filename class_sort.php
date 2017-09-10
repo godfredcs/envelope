@@ -1,6 +1,11 @@
 <?php  
 	session_start();
 
+	if (!isset($_SESSION['username'])) {
+		header('Location: index.php');
+		exit();
+	}
+
 	$course = $_POST['course'];
 
 	@include 'includes/db_connect.php';
